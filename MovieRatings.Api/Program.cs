@@ -10,6 +10,9 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddApplication();
 
+var config = builder.Configuration;
+builder.Services.AddDatabase(config["Database:ConnectionString"]!);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
