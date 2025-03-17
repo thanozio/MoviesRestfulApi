@@ -22,6 +22,7 @@ public static class ApplicationServiceCollectionExtensions
         // this is a Singleton that basically masks a transient 
         services.AddSingleton<IDbConnectionFactory>(_ =>
             new NpgsqlConnectionFactory(connectionString));
+        services.AddSingleton<DbInitializer>();
 
         return services;
     }

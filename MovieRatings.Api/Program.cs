@@ -1,4 +1,5 @@
 using MovieRatings.Application;
+using MovieRatings.Application.Database;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,5 +24,9 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// populate the database with mock data
+var dbInitializer = app.Services.GetRequiredService<DbInitializer>();
+await dbInitializer.InitializeAsync();
 
 app.Run();
