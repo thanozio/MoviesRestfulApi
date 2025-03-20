@@ -1,10 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRatings.Api", "MovieRatings.Api\MovieRatings.Api.csproj", "{1F10676F-60B7-43DC-B6AE-3A8CD5141A69}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRatings.Application", "MovieRatings.Application\MovieRatings.Application.csproj", "{F8A6FB57-2059-4068-9CB4-94E12BD81D7B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRatings.Contracts", "MovieRatings.Contracts\MovieRatings.Contracts.csproj", "{6163B491-A93D-4F2C-A9C5-E46619D2F4F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +32,8 @@ Global
 		{6163B491-A93D-4F2C-A9C5-E46619D2F4F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6163B491-A93D-4F2C-A9C5-E46619D2F4F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6163B491-A93D-4F2C-A9C5-E46619D2F4F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
